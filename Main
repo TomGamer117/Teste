@@ -1,0 +1,26 @@
+package me.tbhg;
+
+import org.bukkit.Bukkit;
+import org.bukkit.event.Listener;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class Main extends JavaPlugin implements Listener {
+	
+	String msg = "§f[§4TB§2HG§f]§b";
+	
+	public void onEnable()
+	{
+		getServer().getPluginManager().registerEvents(this, this);
+		Bukkit.getConsoleSender().sendMessage(this.msg + " Plugin feito por Tom_Gamer117 e BielSAA");
+		Bukkit.getConsoleSender().sendMessage(this.msg + " Plugin esta na versao 1.0 - Beta");
+		Bukkit.getConsoleSender().sendMessage(this.msg + " Plugin ativado!");
+	}
+
+	public void onDisable()
+	{
+		Bukkit.getConsoleSender().sendMessage(this.msg + " Obrigado por ultilizar nosso plugin!");
+		Bukkit.getConsoleSender().sendMessage(this.msg + " Plugin desativado!");
+	}
+
+}
+
