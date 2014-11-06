@@ -21,6 +21,18 @@ public class Main extends JavaPlugin implements Listener {
 		Bukkit.getConsoleSender().sendMessage(this.msg + " Obrigado por ultilizar nosso plugin!");
 		Bukkit.getConsoleSender().sendMessage(this.msg + " Plugin desativado!");
 	}
-
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String args[]) {
+		if(label.equalsIgnoreCase("tbhg")){
+			if(args[0] == start){
+				//Iniciar HG aqui
+			}else if(args[0] == help){
+				//Subcomandos do plugin
+			}else{
+				sender.sendMessage("§f[§4TB§2HG§f]§b Plugin feito por Tom_Gamer117 com ajuda de BielSAA");
+				sender.sendMessage("§f[§4TB§2HG§f]§b Para ajuda digite /tbhg help");
+			}
+		}
+		return false;
+	}
 }
 
