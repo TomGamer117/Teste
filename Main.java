@@ -23,9 +23,9 @@ public class Main extends JavaPlugin implements Listener {
 	}
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String args[]) {
 		if(label.equalsIgnoreCase("tbhg")){
-			if(args[0] == start){
+			if(args[0].equalsIgnoreCase("start")){
 				//Iniciar HG aqui
-			}else if(args[0] == help){
+			}else if(args[0].equalsIgnoreCase("help")){
 				//Subcomandos do plugin
 			}else{
 				sender.sendMessage("§f[§4TB§2HG§f]§b Plugin feito por Tom_Gamer117 com ajuda de BielSAA");
